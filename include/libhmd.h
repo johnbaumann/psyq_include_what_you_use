@@ -12,6 +12,10 @@
  *	All rights reserved.
  */
 
+#include <libgpu.h>
+#include <libgs.h>
+#include <types.h>
+
 #define GsUNIT_TERM	0xffffffff	/* Primitive terminater */
 
 #define GsUNIT_DIV1	(1<<24)		/*  2 x  2 divide */

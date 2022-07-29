@@ -9,6 +9,7 @@
 #define _LIBDS_H_
 
 #include <kernel.h>
+#include <types.h>
 
 /*
  * CD-ROM Mode (used int CdlSetmode)

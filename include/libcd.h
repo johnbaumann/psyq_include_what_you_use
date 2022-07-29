@@ -56,6 +56,9 @@
  *	CdlReadS	-		status
  *	--------------------------------------------------------------
  */
+
+#include <types.h>
+
 /*
  * CD-ROM Basic System
  */

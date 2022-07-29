@@ -61,6 +61,9 @@
  *		 color	CLUT	CLUT	DIRECT
  */
 
+#include <libgte.h>
+#include <types.h>
+
 /*
  *	Externals
  */

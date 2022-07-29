@@ -14,7 +14,7 @@
  *$Id: libgte.h,v 1.35 1998/03/10 03:52:35 noda Exp $
  */
 
-
+#include <types.h>
 
 /*
  * Geometry Structures:

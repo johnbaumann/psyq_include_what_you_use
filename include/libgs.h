@@ -14,6 +14,9 @@
  * Copyright (C) 1993 by Sony Corporation All rights Reserved 
  */
 
+#include <libgpu.h>
+#include <types.h>
+
 #ifndef NULL
 #define NULL 0
 #endif

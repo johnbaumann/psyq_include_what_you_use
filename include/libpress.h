@@ -7,6 +7,9 @@
  * 		libpress.h: Prototypes for libpress
  *
  */
+
+#include <types.h>
+
 /* DecDCTvlc Table */
 typedef	u_short DECDCTTAB[34816];
 

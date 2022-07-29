@@ -7,6 +7,9 @@
  *
  * 			libetc.h: Pad Interface
  */
+
+#include <types.h>
+
 extern int PadIdentifier;
 /*
  * PAD I/O (SIO Pad)
