@@ -383,9 +383,17 @@ typedef struct {
 typedef struct {
 	RECT	disp;		/* display area */
 	RECT	screen;		/* display start point */
-	u_char	isinter;	/* interlace 0: off 1: on */
-	u_char	isrgb24;	/* RGB24 bit mode */
-	u_char	pad0, pad1;	/* reserved */
+	/* fix contributed by StiNKz */
+	/* SDK loads these bytes as a single word, */
+	/* which could cause crashes due to alignment issues */
+	union { 
+		u_long _data;
+		struct {
+			u_char	isinter;	/* interlace 0: off 1: on */
+			u_char	isrgb24;	/* RGB24 bit mode */
+			u_char	pad0, pad1;	/* reserved */
+		};
+	};
 } DISPENV;
 
 /*
