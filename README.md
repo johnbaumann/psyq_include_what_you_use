@@ -2,7 +2,8 @@
 Fixes psyq headers to include what they use, so changing the include order in your project doesn't break compiling.
 
 # Instructions
-Download the archive from the releases page and replace your existing psyq include directory with the one from the archive.
+Clone/download the repo, rename your existing psyq include directory, and extract the include folder where the original was.
 
 # Bug Fixes
 - libgpu.h Protect against possible alignment issues in DISPENV, fix contributed by StiNKz
+- stdarg.h Deleted, as this is a compiler specific implementation and gcc has its own
