@@ -10,9 +10,7 @@
  * $PSLibId: Run-time Library Release 4.7$
  */
 
-#ifndef _KERNEL_H
 #include "kernel.h"
-#endif
 
 /* don't change these macros and structures which is referred in controler code */
 

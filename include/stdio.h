@@ -21,11 +21,6 @@
 #define SEEK_END 2
 #endif
 
-#ifndef _SIZE_T
-#define _SIZE_T
-typedef unsigned int size_t;  /* result type of the sizeof operator (ANSI) */
-#endif
-
 /* under constraction now */
 
 #if defined(_LANGUAGE_C_PLUS_PLUS)||defined(__cplusplus)||defined(c_plusplus)

@@ -12,17 +12,6 @@
 
 /* don't change these macros and structures which is referred in controler code */ 
 
-#ifndef TRUE
-#define TRUE		1
-#endif
-#ifndef FALSE
-#define FALSE		0
-#endif
-#ifndef NULL
-#define NULL		0
-#endif
-
-
 #define PadStateDiscon		0
 #define PadStateFindPad		1
 #define PadStateFindCTP1	2
