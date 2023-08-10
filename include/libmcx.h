@@ -12,20 +12,6 @@
 
 /* don't change these macros and structures which is referred in mcx code */ 
 
-#ifndef TRUE
-#define TRUE		1
-#endif
-#ifndef FALSE
-#define FALSE		0
-#endif
-#ifndef NULL
-#define NULL		0
-#endif
-#ifndef ERROR
-#define ERROR		(-1)
-#endif
-
-
 #define McxFuncGetApl		1
 #define McxFuncExecApl		2
 #define McxFuncGetTime		3

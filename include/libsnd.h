@@ -68,9 +68,6 @@
 #define SND_ADDR  16
 #define SND_PITCH 32
 
-#ifndef NULL
-#define NULL 0
-#endif
 
 
 /*

@@ -2,16 +2,12 @@
  * File:ioctl.h
  */
 /*
- * $PSLibId: Run-time Library Release 4.6$
+ * $PSLibId: Run-time Library Release 4.7$
  */
 
 #ifndef _SYS_IOCTL_H
 #define _SYS_IOCTL_H
 
-
-#ifndef NULL
-#define NULL 0
-#endif
 
 #ifndef EOF
 #define	EOF	(-1)			/* EOF from getc() */

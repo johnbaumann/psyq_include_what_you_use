@@ -7,13 +7,8 @@
 /*
  * $PSLibId: Run-time Library Release 4.7$
  */
-#ifndef _R3000_H
 #include <r3000.h>
-#endif
-
-#ifndef _ASM_H
 #include <asm.h>
-#endif
 
 /* don't change these macros and structures which is refereced in kernel code */ 
 
@@ -155,10 +150,6 @@ struct DIRENTRY {
 extern struct ToT SysToT[32];
 
 extern long SysClearRCnt[];
-
-#ifndef NULL
-#define NULL (0)
-#endif
 
 #if defined(_LANGUAGE_C)||defined(LANGUAGE_C)
 #define delete  erase
