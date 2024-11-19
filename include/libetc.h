@@ -36,6 +36,8 @@ extern int PadIdentifier;
 #define PADR2      PADm
 #define PADstart   PADh
 #define PADselect  PADk
+#define PADR3      0x00000400
+#define PADL3      0x00000200
 		    
 #define MOUSEleft  (1<<3)
 #define MOUSEright (1<<2)
