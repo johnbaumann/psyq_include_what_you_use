@@ -10,6 +10,8 @@ Clone/download the repo, rename your existing psyq include directory, and extrac
 - Fix error in gte bytecode/macros for gte_gpl0 and gte_gpl0_b where an extra byte was included, identified by <vini> cius
 - Redirected duplicate header entries to their counterparts in sys directory
 - Added L3/R3 definitions, cherry-picked from fork by Ay91169
+- Remove psyq version of stddef.h, replaced definitions for and usage of NULL and size_t with C Standard Library version of stddef.h
+- Make strdup macro safer by adding do...while(0)
 
 # Download this repo
 https://github.com/johnbaumann/psyq_include_what_you_use/zipball/master
