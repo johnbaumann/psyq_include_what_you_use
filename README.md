@@ -7,6 +7,7 @@ Clone/download the repo, rename your existing psyq include directory, and extrac
 # Bug Fixes
 - libgpu.h Protect against possible alignment issues in DISPENV, fix contributed by StiNKz
 - stdarg.h Deleted, as this is a compiler specific implementation and gcc has its own
+- Fix error in gte bytecode/macros for gte_gpl0 and gte_gpl0_b where an extra byte was included, identified by <vini> cius
 
 # Download this repo
 https://github.com/johnbaumann/psyq_include_what_you_use/zipball/master
