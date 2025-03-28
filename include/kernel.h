@@ -7,13 +7,7 @@
 /*
  * $PSLibId: Run-time Library Release 4.7$
  */
-#ifndef _R3000_H
-#include <r3000.h>
-#endif
-
-#ifndef _ASM_H
 #include <asm.h>
-#endif
 
 /* don't change these macros and structures which is refereced in kernel code */ 
 
