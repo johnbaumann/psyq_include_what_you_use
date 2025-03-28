@@ -150,10 +150,6 @@ extern struct ToT SysToT[32];
 
 extern long SysClearRCnt[];
 
-#ifndef NULL
-#define NULL (0)
-#endif
-
 #if defined(_LANGUAGE_C)||defined(LANGUAGE_C)
 #define delete  erase
 #endif /* LANGUAGE_C */
