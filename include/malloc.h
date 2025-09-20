@@ -7,13 +7,7 @@
 #ifndef _MALLOC_H
 #define _MALLOC_H
 
-#ifndef _SIZE_T
-#define _SIZE_T
-typedef unsigned int size_t;  /* result type of the sizeof operator (ANSI) */
-#endif
-#ifndef NULL
-#define NULL 0		       /* null pointer constant */
-#endif
+#include <stddef.h>
 
 #if defined(_LANGUAGE_C_PLUS_PLUS)||defined(__cplusplus)||defined(c_plusplus)
 extern "C" {

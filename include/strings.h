@@ -11,15 +11,6 @@
 
 #define LMAX 256
 
-#ifndef NULL
-#define NULL 0		       /* null pointer constant */
-#endif
-
-#ifndef _SIZE_T
-#define _SIZE_T
-typedef unsigned int size_t;  /* result type of the sizeof operator (ANSI) */
-#endif
-
 #include <memory.h>
 
 #if defined(_LANGUAGE_C_PLUS_PLUS)||defined(__cplusplus)||defined(c_plusplus)
@@ -46,7 +37,7 @@ extern char *strstr (const char *, const char *);
 }
 #endif
 
-#define strdup(p)	( strcpy(malloc(strlen(p)+1),p); )
+#define strdup(p) do { strcpy(malloc(strlen(p) + 1), p); } while (0)
 
 #endif	/* _STRINGS_H */
 
