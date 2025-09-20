@@ -32,12 +32,12 @@ extern int PadIdentifier;
 #define PADh       (1<<11)
 #define PADL1      PADn
 #define PADL2      PADo
+#define PADL3      PADi
 #define PADR1      PADl
 #define PADR2      PADm
+#define PADR3      PADj
 #define PADstart   PADh
 #define PADselect  PADk
-#define PADR3      0x00000400
-#define PADL3      0x00000200
 		    
 #define MOUSEleft  (1<<3)
 #define MOUSEright (1<<2)
