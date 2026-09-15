@@ -721,11 +721,19 @@ extern int KanjiFntPrint(...);
 #else
 #ifndef _FNTPRINT_
 #define _FNTPRINT_
+#if (__STDC_VERSION__ >= 202311L)
+extern int FntPrint(...);
+#else
 extern int FntPrint();
+#endif /* (__STDC_VERSION__ >= 202311L) */
 #endif /* _FNTPRINT_ */
 #ifndef _KANJIFNTPRINT_
 #define _KANJIFNTPRINT_
+#if (__STDC_VERSION__ >= 202311L)
+extern int KanjiFntPrint(...);
+#else
 extern int KanjiFntPrint();
+#endif /* (__STDC_VERSION__ >= 202311L) */
 #endif /* _KANJIFNTPRINT_ */
 #endif
 	

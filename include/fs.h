@@ -83,10 +83,6 @@ struct	iob {
 };
 #endif /* LANGUAGE_C */
 
-#ifndef NULL
-#define NULL 0
-#endif
-
 /* Request codes */
 #define	READ	1
 #define	WRITE	2

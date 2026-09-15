@@ -21,7 +21,7 @@ extern "C" {
 
 extern void *bsearch(const unsigned char *, const unsigned char *,
 				 size_t, size_t, int (*)());
-extern void exit();
+extern void exit(int);
 
 #if defined(_LANGUAGE_C_PLUS_PLUS)||defined(__cplusplus)||defined(c_plusplus)
 }

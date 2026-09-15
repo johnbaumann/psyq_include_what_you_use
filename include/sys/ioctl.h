@@ -9,10 +9,6 @@
 #define _SYS_IOCTL_H
 
 
-#ifndef NULL
-#define NULL 0
-#endif
-
 #ifndef EOF
 #define	EOF	(-1)			/* EOF from getc() */
 #endif

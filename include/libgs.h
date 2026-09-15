@@ -15,11 +15,8 @@
  */
 
 #include <libgpu.h>
+#include <stddef.h>
 #include <types.h>
-
-#ifndef NULL
-#define NULL 0
-#endif
 
 /*** packet peripheral pointer ***/
 typedef unsigned char PACKET;
