@@ -11,6 +11,7 @@
 
 #define LMAX 256
 
+#include <malloc.h>
 #include <memory.h>
 
 #if defined(_LANGUAGE_C_PLUS_PLUS)||defined(__cplusplus)||defined(c_plusplus)
@@ -18,11 +19,11 @@ extern "C" {
 #endif
 extern char *strcat (char *, const char *);
 extern char *strncat(char *, const char *, int);
-extern int   strcmp (/* char *, char * */);	/* To avoid conflicting */
+extern int   strcmp (const char *, const char *);
 extern int   strncmp(const char *,const char *, int);
-extern char *strcpy (/* char *, char * */);	/* To avoid conflicting */
+extern char *strcpy (char *, const char *);
 extern char *strncpy(char *, const char *, int);
-extern unsigned int strlen (/* char * */);		/* To avoid conflicting */
+extern unsigned int strlen (const char *);
 extern char *index  (const char *, char);
 extern char *rindex (const char *, char);
 
@@ -37,7 +38,10 @@ extern char *strstr (const char *, const char *);
 }
 #endif
 
-#define strdup(p) do { strcpy(malloc(strlen(p) + 1), p); } while (0)
+static inline char *strdup(const char *p)
+{
+    return strcpy((char *)(malloc(strlen(p) + 1)), p);
+}
 
 #endif	/* _STRINGS_H */
 
